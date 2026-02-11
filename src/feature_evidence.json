@@ -1,0 +1,98 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-responsive-modern-landing-page-for-an-educational-website-named-knowledge-iq-focused-on-competitive-exams-upsc-ssc-rrb-wbcs-psc-using-a-dark-navy-blue-and-saffron-theme-with-a-clean-trustworthy-exam-oriented-look-and-consistent-typography-spacing-across-all-sections",
+      "featureTitle": "Create a responsive, modern landing page for an educational website named \"Knowledge IQ\" focused on competitive exams (UPSC, SSC, RRB, WBCS, PSC) using a dark navy blue and saffron theme with a clean, trustworthy, exam-oriented look and consistent typography/spacing across all sections.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-hero-section-that-includes-1-a-visual-featuring-an-india-map-outline-and-exam-prep-icons-book-target-globe-chart-2-a-clear-headline-subheadline-in-english-describing-exam-preparation-and-3-call-to-action-buttons-labeled-exactly-start-practice-and-download-free-pdfs",
+      "featureTitle": "Implement a hero section that includes: (1) a visual featuring an India map outline and exam-prep icons (book, target, globe, chart), (2) a clear headline/subheadline in English describing exam preparation, and (3) call-to-action buttons labeled exactly \"Start Practice\" and \"Download Free PDFs\".",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-distinct-clearly-labeled-homepage-sections-for-daily-gk-mock-tests-current-affairs-previous-year-questions-and-free-pdfs-each-section-should-include-a-short-description-and-an-obvious-action-button-link-to-explore-that-section",
+      "featureTitle": "Add distinct, clearly labeled homepage sections for: Daily GK, Mock Tests, Current Affairs, Previous Year Questions, and Free PDFs. Each section should include a short description and an obvious action (button/link) to explore that section.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-basic-on-page-seo-for-the-website-set-an-appropriate-html-title-and-meta-description-for-knowledge-iq-ensure-there-is-a-single-h1-on-the-homepage-use-semantic-landmarks-structure-header-main-section-footer-and-accessible-alt-text-for-meaningful-images",
+      "featureTitle": "Implement basic on-page SEO for the website: set an appropriate HTML title and meta description for \"Knowledge IQ\"; ensure there is a single H1 on the homepage; use semantic landmarks/structure (header, main, section, footer) and accessible alt text for meaningful images.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-ensure-the-generated-hero-artwork-is-included-as-static-assets-under-frontend-public-assets-generated-and-is-used-in-the-hero-section-without-fetching-images-from-the-backend",
+      "featureTitle": "Ensure the generated hero artwork is included as static assets under frontend/public/assets/generated and is used in the hero section without fetching images from the backend.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

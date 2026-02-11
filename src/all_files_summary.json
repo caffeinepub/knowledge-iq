@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Minimal Motoko actor with no methods.",
+  "feature_evidence.json": "Feature evidence report mapping features to related files and components.",
+  "frontend-file-summaries.txt": "Prewritten summaries describing main frontend files and their roles.",
+  "frontend/index.css": "Tailwind base styles defining navy and saffron theme using OKLCH variables for light and dark modes.",
+  "frontend/index.html": "HTML entry with SEO metadata, Inter font loading, and root div for mounting the app.",
+  "frontend/src/App.tsx": "Main React landing page component with hero, exam categories, feature cards, stats, and structured layout.",
+  "frontend/src/hooks/useActor.ts": "Hook that creates and refreshes a backend actor instance based on Internet Identity authentication.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Internet Identity React context providing login, logout, and identity state management using AuthClient.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder React Query hook wired to actor for future backend calls.",
+  "frontend/src/index.css": "Tailwind styles defining updated navy and saffron design tokens, typography, and custom utility classes.",
+  "frontend/src/main.tsx": "Application entry point mounting React with InternetIdentityProvider and React Query client.",
+  "frontend/tailwind.config.js": "Tailwind configuration enabling dark mode, custom colors, typography, animations, container settings, and extended theme utilities. Includes imported plugins and extensive OKLCH-based color tokens.",
+  "project_state.json": "Project metadata describing requirements, features, image needs, and architectural notes for building the Knowledge IQ educational website. Tracks project versioning, known issues, and planned functionality."
+}

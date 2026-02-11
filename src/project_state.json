@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Build a modern, trustworthy, mobile-friendly, SEO-optimized educational website named \"Knowledge IQ\" for competitive exam preparation (UPSC, SSC, RRB, WBCS, PSC) with a dark navy blue and saffron theme, hero visuals, and key content sections plus CTAs.",
+  "architectural_notes": [
+    "Mobile-first responsive layout and performance-conscious design for exam-prep audience.",
+    "On-page SEO best practices: semantic HTML, meta title/description, proper headings, and structured content sections."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Hero illustration with India map outline and four exam icons (book, target, globe, chart) in a modern flat style, dark navy + saffron accents (knowledge-iq-hero.dim_1600x900.png)\n- Set of four standalone flat icons: book, target, globe, chart matching the hero style and palette (knowledge-iq-icons-set.dim_512x512.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-modern-landing-page-for-an-educational-website-named-knowledge-iq-focused-on-competitive-exams-upsc-ssc-rrb-wbcs-psc-using-a-dark-navy-blue-and-saffron-theme-with-a-clean-trustworthy-exam-oriented-look-and-consistent-typography-spacing-across-all-sections",
+      "title": "Create a responsive, modern landing page for an educational website named \"Knowledge IQ\" focused on competitive exams (UPSC, SSC, RRB, WBCS, PSC) using a dark navy blue and saffron theme with a clean, trustworthy, exam-oriented look and consistent typography/spacing across all sections.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-hero-section-that-includes-1-a-visual-featuring-an-india-map-outline-and-exam-prep-icons-book-target-globe-chart-2-a-clear-headline-subheadline-in-english-describing-exam-preparation-and-3-call-to-action-buttons-labeled-exactly-start-practice-and-download-free-pdfs",
+      "title": "Implement a hero section that includes: (1) a visual featuring an India map outline and exam-prep icons (book, target, globe, chart), (2) a clear headline/subheadline in English describing exam preparation, and (3) call-to-action buttons labeled exactly \"Start Practice\" and \"Download Free PDFs\".",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-distinct-clearly-labeled-homepage-sections-for-daily-gk-mock-tests-current-affairs-previous-year-questions-and-free-pdfs-each-section-should-include-a-short-description-and-an-obvious-action-button-link-to-explore-that-section",
+      "title": "Add distinct, clearly labeled homepage sections for: Daily GK, Mock Tests, Current Affairs, Previous Year Questions, and Free PDFs. Each section should include a short description and an obvious action (button/link) to explore that section.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-basic-on-page-seo-for-the-website-set-an-appropriate-html-title-and-meta-description-for-knowledge-iq-ensure-there-is-a-single-h1-on-the-homepage-use-semantic-landmarks-structure-header-main-section-footer-and-accessible-alt-text-for-meaningful-images",
+      "title": "Implement basic on-page SEO for the website: set an appropriate HTML title and meta description for \"Knowledge IQ\"; ensure there is a single H1 on the homepage; use semantic landmarks/structure (header, main, section, footer) and accessible alt text for meaningful images.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-generated-hero-artwork-is-included-as-static-assets-under-frontend-public-assets-generated-and-is-used-in-the-hero-section-without-fetching-images-from-the-backend",
+      "title": "Ensure the generated hero artwork is included as static assets under frontend/public/assets/generated and is used in the hero section without fetching images from the backend.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create \"Knowledge IQ\" educational website focused on competitive exams (UPSC, SSC, RRB, WBCS, PSC) with modern, clean, exam-oriented design",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Apply dark navy blue + saffron color theme and overall trustworthy branding",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add hero section featuring India map outline and exam icons (book, target, globe, chart) plus CTAs (\"Start Practice\", \"Download Free PDFs\")",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Include main sections: Daily GK, Mock Tests, Current Affairs, Previous Year Questions, Free PDFs",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Ensure mobile-friendly responsive layout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Implement SEO optimization (basic on-page SEO/meta structure)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Knowledge IQ",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        
+        /* Navy Blue Theme - Light Mode */
+        --background: 0.98 0 0;
+        --foreground: 0.15 0.08 250;
+        --card: 1 0 0;
+        --card-foreground: 0.15 0.08 250;
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0.08 250;
+        
+        /* Saffron as Primary */
+        --primary: 0.75 0.15 45;
+        --primary-foreground: 0.15 0.08 250;
+        
+        /* Navy as Secondary */
+        --secondary: 0.25 0.08 250;
+        --secondary-foreground: 0.98 0 0;
+        
+        --muted: 0.95 0.01 250;
+        --muted-foreground: 0.45 0.04 250;
+        --accent: 0.92 0.02 250;
+        --accent-foreground: 0.15 0.08 250;
+        
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        
+        --border: 0.88 0.02 250;
+        --input: 0.88 0.02 250;
+        --ring: 0.75 0.15 45;
+        
+        /* Custom Navy Shades */
+        --navy: 0.15 0.08 250;
+        --navy-dark: 0.12 0.08 250;
+        
+        /* Custom Saffron Shades */
+        --saffron: 0.75 0.15 45;
+        --saffron-dark: 0.65 0.15 45;
+        
+        --chart-1: 0.75 0.15 45;
+        --chart-2: 0.15 0.08 250;
+        --chart-3: 0.6 0.12 180;
+        --chart-4: 0.7 0.18 30;
+        --chart-5: 0.5 0.1 280;
+    }
+
+    .dark {
+        /* Navy Blue Theme - Dark Mode */
+        --background: 0.12 0.08 250;
+        --foreground: 0.98 0 0;
+        --card: 0.15 0.08 250;
+        --card-foreground: 0.98 0 0;
+        --popover: 0.18 0.08 250;
+        --popover-foreground: 0.98 0 0;
+        
+        /* Saffron as Primary */
+        --primary: 0.75 0.15 45;
+        --primary-foreground: 0.12 0.08 250;
+        
+        /* Lighter Navy as Secondary */
+        --secondary: 0.22 0.08 250;
+        --secondary-foreground: 0.98 0 0;
+        
+        --muted: 0.2 0.06 250;
+        --muted-foreground: 0.65 0.04 250;
+        --accent: 0.25 0.08 250;
+        --accent-foreground: 0.98 0 0;
+        
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.98 0 0;
+        
+        --border: 0.25 0.06 250;
+        --input: 0.25 0.06 250;
+        --ring: 0.75 0.15 45;
+        
+        /* Custom Navy Shades */
+        --navy: 0.15 0.08 250;
+        --navy-dark: 0.1 0.08 250;
+        
+        /* Custom Saffron Shades */
+        --saffron: 0.75 0.15 45;
+        --saffron-dark: 0.65 0.15 45;
+        
+        --chart-1: 0.75 0.15 45;
+        --chart-2: 0.25 0.08 250;
+        --chart-3: 0.6 0.12 180;
+        --chart-4: 0.7 0.18 30;
+        --chart-5: 0.5 0.1 280;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold;
+        letter-spacing: -0.02em;
+    }
+    
+    /* Grid Pattern for Hero Background */
+    .bg-grid-pattern {
+        background-image: 
+            linear-gradient(to right, oklch(var(--saffron) / 0.1) 1px, transparent 1px),
+            linear-gradient(to bottom, oklch(var(--saffron) / 0.1) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+}
+
+@layer utilities {
+    .text-navy {
+        color: oklch(var(--navy));
+    }
+    
+    .text-navy-dark {
+        color: oklch(var(--navy-dark));
+    }
+    
+    .text-saffron {
+        color: oklch(var(--saffron));
+    }
+    
+    .text-saffron-dark {
+        color: oklch(var(--saffron-dark));
+    }
+    
+    .bg-navy {
+        background-color: oklch(var(--navy));
+    }
+    
+    .bg-navy-dark {
+        background-color: oklch(var(--navy-dark));
+    }
+    
+    .bg-saffron {
+        background-color: oklch(var(--saffron));
+    }
+    
+    .bg-saffron-dark {
+        background-color: oklch(var(--saffron-dark));
+    }
+    
+    .border-saffron {
+        border-color: oklch(var(--saffron));
+    }
+    
+    .border-navy {
+        border-color: oklch(var(--navy));
+    }
+}

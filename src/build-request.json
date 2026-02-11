@@ -1,0 +1,112 @@
+{
+  "kind": "build_request",
+  "title": "Create Knowledge IQ competitive exam prep website (dark navy + saffron)",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a responsive, modern landing page for an educational website named \"Knowledge IQ\" focused on competitive exams (UPSC, SSC, RRB, WBCS, PSC) using a dark navy blue and saffron theme with a clean, trustworthy, exam-oriented look and consistent typography/spacing across all sections.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a professional educational website named \"Knowledge IQ\" focused on competitive exams like UPSC, SSC, RRB, WBCS and PSC. Use a dark navy blue and saffron color theme. ... The website should look modern, clean, exam-oriented and trustworthy."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The homepage prominently displays the site name \"Knowledge IQ\" and references the target exams (UPSC, SSC, RRB, WBCS, PSC).",
+        "Primary colors are dark navy blue and saffron and are applied consistently to backgrounds, accents, buttons, and highlights.",
+        "Layout is responsive and usable on mobile, tablet, and desktop without horizontal scrolling."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement a hero section that includes: (1) a visual featuring an India map outline and exam-prep icons (book, target, globe, chart), (2) a clear headline/subheadline in English describing exam preparation, and (3) call-to-action buttons labeled exactly \"Start Practice\" and \"Download Free PDFs\".",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Add a hero section with India map outline and exam icons like book, target, globe and chart.",
+          "Include call-to-action buttons like \"Start Practice\" and \"Download Free PDFs\"."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section renders an India map outline plus the four specified icons as part of the hero visual (not only as text).",
+        "Two CTA buttons are visible in the hero with labels exactly: \"Start Practice\" and \"Download Free PDFs\".",
+        "CTAs are keyboard focusable and have visible hover/focus styles."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add distinct, clearly labeled homepage sections for: Daily GK, Mock Tests, Current Affairs, Previous Year Questions, and Free PDFs. Each section should include a short description and an obvious action (button/link) to explore that section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Include sections for Daily GK, Mock Tests, Current Affairs, Previous Year Questions and Free PDFs."
+        ]
+      },
+      "acceptanceCriteria": [
+        "All five sections appear on the homepage with headings exactly matching the requested labels.",
+        "Each section includes at least one short English description line and a clickable action element (button or link).",
+        "Sections are visually separated with consistent spacing and follow the site theme."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Implement basic on-page SEO for the website: set an appropriate HTML title and meta description for \"Knowledge IQ\"; ensure there is a single H1 on the homepage; use semantic landmarks/structure (header, main, section, footer) and accessible alt text for meaningful images.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Make it mobile friendly and SEO optimized."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Homepage has a single H1 and uses semantic sections (header/main/section/footer).",
+        "Document title includes \"Knowledge IQ\" and references competitive exam preparation.",
+        "A meta description is present and written in English.",
+        "All meaningful images used in content/hero have non-empty alt text; decorative images/icons are marked appropriately (e.g., empty alt or aria-hidden)."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Ensure the generated hero artwork is included as static assets under frontend/public/assets/generated and is used in the hero section without fetching images from the backend.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images exist under frontend/public/assets/generated and are referenced directly by the frontend.",
+        "No backend calls are required to render the hero artwork."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under frontend/src/components/ui (read-only Shadcn components); compose them instead.",
+    "Do not modify frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, or frontend/src/main.tsx (immutable paths).",
+    "Backend must remain a single Motoko actor; do not introduce additional backend services."
+  ],
+  "nonGoals": [
+    "User accounts/authentication flows (Internet Identity) are out of scope unless explicitly requested.",
+    "Implementing real practice engines, question banks, mock test scoring, or content management is out of scope for this request.",
+    "Server-side rendering and Next.js-style SEO features are out of scope (React SPA only)."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Hero illustration with India map outline and four exam icons (book, target, globe, chart) in a modern flat style, dark navy + saffron accents (knowledge-iq-hero.dim_1600x900.png)",
+      "Set of four standalone flat icons: book, target, globe, chart matching the hero style and palette (knowledge-iq-icons-set.dim_512x512.png)"
+    ],
+    "edits": []
+  }
+}

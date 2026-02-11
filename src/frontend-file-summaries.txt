@@ -1,0 +1,7 @@
+{
+  "frontend/src/App.tsx": "Main landing page component for Knowledge IQ featuring a hero section with India map, exam categories (UPSC/SSC/RRB/WBCS/PSC), five feature sections (Daily GK, Mock Tests, Current Affairs, Previous Year Questions, Free PDFs), statistics, CTAs, and footer with proper semantic HTML structure.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining dark navy blue and saffron theme tokens for both light and dark modes, custom utility classes for navy/saffron colors, grid pattern background, and typography settings.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with navy and saffron color tokens, Inter font family, and custom design system settings to support the Knowledge IQ brand theme.",
+  "frontend/index.html": "HTML entry point with SEO-optimized title, meta description for competitive exam preparation, keywords, and Inter font preload for performance.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks file prepared for future backend integration with placeholder structure for data fetching operations."
+}

@@ -1,0 +1,112 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Knowledge IQ exam prep landing page (dark navy + saffron)",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create a responsive, modern Knowledge IQ landing page with dark navy + saffron branding, consistent typography, and exam-focused content (UPSC/SSC/RRB/WBCS/PSC).",
+      "acceptanceCriteria": [
+        "The homepage prominently displays the site name \"Knowledge IQ\" and references the target exams (UPSC, SSC, RRB, WBCS, PSC).",
+        "Primary colors are dark navy blue and saffron and are applied consistently to backgrounds, accents, buttons, and highlights.",
+        "Layout is responsive and usable on mobile, tablet, and desktop without horizontal scrolling."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Implement the single-page landing layout and content structure for Knowledge IQ, including header + main content flow and responsive section spacing. Use shadcn-ui components (e.g., Button/Card) for consistent UI composition; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Define global theme tokens and base typography/spacing using Tailwind-friendly CSS variables, setting dark navy as the primary background and saffron as the primary accent; ensure consistent heading/body styles across sections."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Adjust Tailwind theme configuration (if needed) to better support the dark navy + saffron palette and consistent typography defaults used by the landing page (keeping existing shadcn variable-based color approach intact)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement a hero section with the required India map + exam icons visual, English headline/subheadline, and exact CTA buttons.",
+      "acceptanceCriteria": [
+        "Hero section renders an India map outline plus the four specified icons as part of the hero visual (not only as text).",
+        "Two CTA buttons are visible in the hero with labels exactly: \"Start Practice\" and \"Download Free PDFs\".",
+        "CTAs are keyboard focusable and have visible hover/focus styles."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add the hero section UI: headline/subheadline copy, an <img>-based hero visual using the generated artwork, and two CTA buttons labeled exactly \"Start Practice\" and \"Download Free PDFs\" with clear hover/focus styles. Use shadcn-ui Button component for CTAs; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/public/assets/generated/knowledge-iq-hero.dim_1600x900.png",
+          "operation": "create",
+          "description": "Add the generated hero illustration asset (India map outline + book/target/globe/chart) as a static file so the frontend can reference it directly without any backend calls."
+        },
+        {
+          "path": "frontend/public/assets/generated/knowledge-iq-icons-set.dim_512x512.png",
+          "operation": "create",
+          "description": "Add the generated standalone icons set as a static file under generated assets for optional use in hero/sections without any backend calls."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Add five distinct homepage sections (Daily GK, Mock Tests, Current Affairs, Previous Year Questions, Free PDFs) with descriptions and clear actions.",
+      "acceptanceCriteria": [
+        "All five sections appear on the homepage with headings exactly matching the requested labels.",
+        "Each section includes at least one short English description line and a clickable action element (button or link).",
+        "Sections are visually separated with consistent spacing and follow the site theme."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add five clearly labeled sections with headings exactly: Daily GK, Mock Tests, Current Affairs, Previous Year Questions, Free PDFs. Each section should include a short English description and an obvious action (button/link) to explore. Use shadcn-ui Card and Button (or equivalent) for consistent layout; verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Implement basic on-page SEO and accessibility: title/meta description, single H1, semantic landmarks, and proper alt text handling.",
+      "acceptanceCriteria": [
+        "Homepage has a single H1 and uses semantic sections (header/main/section/footer).",
+        "Document title includes \"Knowledge IQ\" and references competitive exam preparation.",
+        "A meta description is present and written in English.",
+        "All meaningful images used in content/hero have non-empty alt text; decorative images/icons are marked appropriately (e.g., empty alt or aria-hidden)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Set an SEO-friendly document <title> including \"Knowledge IQ\" and competitive exam preparation, and add an English meta description tag."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Ensure the page uses semantic landmarks (header/main/section/footer) and contains exactly one H1. Provide non-empty alt text for meaningful hero/section images; mark purely decorative visuals appropriately (e.g., aria-hidden or empty alt)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Use the generated hero artwork as static frontend assets under frontend/public/assets/generated with no backend fetching.",
+      "acceptanceCriteria": [
+        "Generated images exist under frontend/public/assets/generated and are referenced directly by the frontend.",
+        "No backend calls are required to render the hero artwork."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Reference the static hero image at frontend/public/assets/generated/knowledge-iq-hero.dim_1600x900.png (and optionally the icons set at frontend/public/assets/generated/knowledge-iq-icons-set.dim_512x512.png) directly from the hero UI; do not add any backend-dependent image loading."
+        }
+      ]
+    }
+  ]
+}
